@@ -1,4 +1,4 @@
-package com.hauns.quickjobsbackend.framework.security.model;
+package com.hauns.security.model;
 
 public interface Permission {
 }

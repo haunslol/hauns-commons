@@ -1,4 +1,4 @@
-package com.hauns.quickjobsbackend.framework.idgeneration;
+package com.hauns.idgeneration;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

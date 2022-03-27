@@ -1,4 +1,4 @@
-package com.hauns.quickjobsbackend.framework.security.model;
+package com.hauns.security.model;
 
 import java.security.Principal;
 import java.util.Set;

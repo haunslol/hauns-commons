@@ -1,4 +1,4 @@
-package com.hauns.quickjobsbackend.framework.idgeneration;
+package com.hauns.idgeneration;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

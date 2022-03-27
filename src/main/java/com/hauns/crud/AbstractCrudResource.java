@@ -1,6 +1,6 @@
-package com.hauns.crud.api;
+package com.hauns.crud;
 
-import com.hauns.quickjobsbackend.datahandling.service.AbstractCrudService;
+
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 public abstract class AbstractCrudResource<I> {
-
+ 
     protected abstract AbstractCrudService<I> getService();
 
     @GetMapping("/{id}")

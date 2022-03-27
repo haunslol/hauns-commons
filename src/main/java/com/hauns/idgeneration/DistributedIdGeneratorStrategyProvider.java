@@ -1,4 +1,4 @@
-package com.hauns.quickjobsbackend.framework.idgeneration;
+package com.hauns.idgeneration;
 
 import org.hibernate.jpa.spi.IdentifierGeneratorStrategyProvider;
 
@@ -10,7 +10,7 @@ public class DistributedIdGeneratorStrategyProvider implements IdentifierGenerat
 
     static {
         strategies = new HashMap<>();
-        strategies.put("com.hauns.components.hibernate.DistributedIdGenerator", DistributedIdGenerator.class);
+        strategies.put("com.hauns.commons.hibernate.DistributedIdGenerator", DistributedIdGenerator.class);
         strategies.put("org.hibernate.envers.DefaultRevisionEntity", DistributedIdGenerator.class);
         strategies.put("native", DistributedIdGenerator.class);
     }
