@@ -8,12 +8,12 @@ public class DistributedIdGenerationWorker {
     private final long twepoch = 1288834974657L;
 
     private final long workerIdBits = 10L;
-    private final long maxWorkerId = -1L ^ (-1L << workerIdBits);
+    private final long maxWorkerId = ~(-1L << workerIdBits);
     private final long sequenceBits = 12L;
 
     private final long workerIdShift = sequenceBits;
     private final long timestampLeftShift = sequenceBits + workerIdBits;
-    private final long sequenceMask = -1L ^ (-1L << sequenceBits);
+    private final long sequenceMask = ~(-1L << sequenceBits);
 
     private long workerId = 0;
 
