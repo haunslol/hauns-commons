@@ -1,8 +1,8 @@
 package com.hauns.common.interfaces;
  
-public interface IIdBaseEntity<T extends Number> {
+public interface IIdBaseEntity<N extends Number> {
 
     String ID_PROPERTY = "id";
 
-    T getId();
+    N getId();
 }
